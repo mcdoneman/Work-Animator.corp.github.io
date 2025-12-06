@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профессиональный аниматор | Ведущий и певец на мероприятиях</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <h1>Профессиональный аниматор</h1>
+        <p>Пою и выступаю на праздниках и корпоративах!</p>
+    </header>
+
+    <main>
+        <section id="about-me">
+            <div class="container">
+                <h2>Обо мне:</h2>
+                <p>Меня зовут Вероника. Я профессиональный ведущий мероприятий, артист-певец и аниматор.</p>
+                <p>Работал ведущим и исполнителем на многих событиях: свадебные церемонии, юбилеи, корпоративные мероприятия, детские праздники и многое другое.</p>
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="container">
+                <h2>Что я делаю?</h2>
+                <ul>
+                    <li>Веду праздничные программы и ведущие части мероприятий;</li>
+                    <li>Выступаю с песенными номерами и музыкальным сопровождением;</li>
+                    <li>Организую увлекательные конкурсы и игры для гостей;</li>
+                    <li>Оформляю мероприятия оригинальными сценариями и ведущими партиями.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="feedback">
+            <div class="container">
+                <h2>Свяжитесь со мной:</h2>
+                <form action="send.php" method="POST">
+                    <label for="name">Вероника:</label><br>
+                    <input type="text" id="name" name="name" required placeholder="Иван Иванович"><br>
+
+                    <label for="email">more6890@mail.ru:</label><br>
+                    <input type="email" id="email" name="email" required placeholder="ivan@mail.ru"><br>
+
+                    <label for="phone">+7(922)781-76-01:</label><br>
+                    <input type="tel" id="phone" name="phone" required placeholder="+7 (XXX) XXXXXXX"><br>
+
+                    <label for="event-date">Желаемая дата мероприятия:</label><br>
+                    <input type="date" id="event-date" name="event-date" required><br>
+
+                    <label for="event-type">Тип мероприятия:</label><br>
+                    <select id="event-type" name="event-type" required>
+                        <option value="" disabled selected>Выберите тип...</option>
+                        <option value="свадьба">Свадьба</option>
+                        <option value="корпоратив">Корпоратив</option>
+                        <option value="детский праздник">Детский праздник</option>
+                        <option value="юбилей">Юбилей</option>
+                        <option value="другое">Другое</option>
+                    </select><br>
+
+                    <label for="additional-info">Дополнительная информация:</label><br>
+                    <textarea id="additional-info" name="additional-info" rows="4" cols="50" placeholder="Любая дополнительная информация о мероприятии"></textarea><br>
+
+                    <button type="submit">Отправить заявку</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2025 NIKAMC / Вероника</p>
+    </footer>
+
+</body>
+</html>
